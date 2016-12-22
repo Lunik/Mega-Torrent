@@ -1,0 +1,30 @@
+{
+  "name": "mega-torrent",
+  "version": "1.2.8",
+  "description": "Download torrent directly to your mega account",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "install": "mkdir downloads;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lunik/Mega-Torrent.git"
+  },
+  "keywords": [
+    "mega",
+    "torrent",
+    "web"
+  ],
+  "author": "lunik <guillaume.lunik@gmail.com> (http://lunik.xyz)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lunik/Mega-Torrent/issues"
+  },
+  "homepage": "https://github.com/Lunik/Mega-Torrent#readme",
+  "dependencies": {
+    "fs": "0.0.2",
+    "mega": "^0.2.0",
+    "webtorrent": "^0.98.0"
+  }
+}

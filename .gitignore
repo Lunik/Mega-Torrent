@@ -1,0 +1,5 @@
+.DS_Store
+depot
+node_modules
+downloads
+npm-debug.log

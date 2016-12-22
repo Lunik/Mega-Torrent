@@ -1,0 +1,20 @@
+notifications:
+  email: false
+language: node_js
+node_js:
+- '6'
+- '5'
+- '4'
+before_install:
+- npm install standard -g
+
+script:
+- standard
+
+deploy:
+  provider: npm
+  email: guillaume.lunik@gmail.com
+  on:
+    tags: true
+  api_key:
+    secure: P1vgXj3n3qMfxhdoM3D2MLZX6lQKc4xzSGHqNYXa4l5t9uZ9CfW29ZifyM1jRUef5tIV0a7AXOYvmxUBhj3/cykXHm7inX/zzDpVlOm8qRr9e+JLp24Ou06eRbUyZTilUBJTi7sXSJuT9Guhn7HI4PfizYkUecFvvYGXpQ8wDeH5juJ33aAmlDNkU2O0icvkVp2lZJ2hX1ejj7I6slOeAIQ0hafauVOCKhgW+m5/T4b/BsKgEptY7RGmu3RDjDnSn09BWFJni1aH5YDon1UxTxvvOVbLnL2TUNdNzVXrNwQKUDTnI/IxRz6xQpygeDnTh5FxQxFt2oO3HQ1iHRxmIjbyr22Zasx1VM6YkFGL8sOxemtfgOcR9fnaqbXBrwkEii64ZIu6zAdrQL8KKKPmWdszil5ay+NeNFyUGvUAuU9/oF0B40khl3BsAhNJsQx6Ze6PJPQRRqf+mM+mrHNAPKB0mhe6SQ69p46me2JpgZDJW/o0HKpnHeFDPNzwfqP9RdGCFF29m5IHh2An9d+3FNXV2h6Mck3Wn+h6ZGePGoS0AROqtbpbs6MLA68vMQQprJEQc+O1opaFBZoW6JuIzCVeEQGYdmKVVB7evHIR+K8uxxk4l/YwYUx4+RYe8cFhdG9xYRA5ChQTUPrsszF7e5XeVrWWzPeToWSKdd5NIa8=
